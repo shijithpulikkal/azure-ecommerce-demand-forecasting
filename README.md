@@ -4,7 +4,6 @@ A time-series forecasting project predicting daily e-commerce revenue using Azur
 
 ![Architecture Diagram](./architecture-diagram.png)
 
-![Forecast: Actual vs Predicted](./chart.gif)
 
 ---
 
@@ -24,6 +23,7 @@ Raw order data → Daily revenue aggregation → Azure ML Data Asset
 
 Rather than hand-picking a single algorithm, AutoML trained and evaluated multiple candidates (including ARIMA-family and ensemble methods) and automatically selected the best performer based on validation error — a practical demonstration of how AutoML accelerates model selection compared to manually building and tuning each algorithm.
 
+![Forecast: Actual vs Predicted](./chart.gif)
 ---
 
 ## 🛠️ Tech Stack
@@ -35,6 +35,9 @@ Rather than hand-picking a single algorithm, AutoML trained and evaluated multip
 | **Azure AutoML (Forecasting)** | Automatically trains and evaluates multiple time-series models |
 | **Python (pandas)** | Data preparation — aggregating transaction-level data into a daily time series |
 | **Azure ML Notebook** | Data prep and results analysis |
+
+![ML Training](./mltraining1.gif)
+
 
 ---
 
@@ -49,12 +52,15 @@ Rather than hand-picking a single algorithm, AutoML trained and evaluated multip
 | **MAPE** | 18.93% | Average forecast is off by ~19% in percentage terms — reasonable for daily-level e-commerce revenue, which is naturally noisy |
 | **Explained Variance** | 0.9630 | Confirms the R² result — the model captures the vast majority of the signal in the data |
 
+
 ### Key Findings
 
 - Azure AutoML selected **ARIMAX** as the best-performing model out of the algorithms it evaluated, balancing accuracy against the time-series structure of the data.
 - With an R² of 0.96, the model captures the **overall revenue trend and daily sales patterns** effectively.
 - **Prediction intervals widen over time** — the model is understandably more confident in short-term forecasts than in predictions further into the 30-day horizon, which is expected and correct behavior for a time-series model.
 - MAPE of ~19% suggests day-to-day volatility that the model doesn't fully explain — likely driven by factors not present in this dataset (see limitations below).
+
+![ML Results](./mltraining2.gif)
 
 ### Limitations
 
