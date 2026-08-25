@@ -2,7 +2,9 @@
 
 A time-series forecasting project predicting daily e-commerce revenue using Azure Machine Learning's AutoML — moving beyond descriptive analytics (what happened) into predictive analytics (what's likely to happen next). Built as the fourth project in a series exploring different facets of the Azure data platform.
 
-![Forecast: Actual vs Predicted](./forecast_chart.png)
+!(./architecture-diagram.png)
+
+![Forecast: Actual vs Predicted](./chart.gif)
 
 ---
 
