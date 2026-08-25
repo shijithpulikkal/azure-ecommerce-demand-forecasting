@@ -2,7 +2,7 @@
 
 A time-series forecasting project predicting daily e-commerce revenue using Azure Machine Learning's AutoML — moving beyond descriptive analytics (what happened) into predictive analytics (what's likely to happen next). Built as the fourth project in a series exploring different facets of the Azure data platform.
 
-![Forecast: Actual vs Predicted](./dashboard/forecast_chart.png)
+![Forecast: Actual vs Predicted](./forecast_chart.png)
 
 ---
 
@@ -82,13 +82,15 @@ Rather than hand-picking a single algorithm, AutoML trained and evaluated multip
 azure-ecommerce-demand-forecasting/
 ├── README.md
 ├── architecture-diagram.png
+├── chart.gif
+├── forecast_chart.png
+├── mltraining1.gif
+├── mltraining2.gif
 ├── scripts/
 │   └── prepare_forecast_data.py
 ├── notebooks/
 │   └── forecast_analysis.ipynb
-└── dashboard/
-    ├── forecast_chart.png
-    └── screenshots/
+
 ```
 
 ---
@@ -105,12 +107,12 @@ azure-ecommerce-demand-forecasting/
 
 ## 🔗 Related Projects
 
-- **[Azure E-Commerce Analytics Pipeline](../azure-ecommerce-analytics-pipeline)** — batch ETL with ADF and Synapse serverless SQL
-- **[Azure E-Commerce Streaming Pipeline](../azure-ecommerce-streaming-pipeline)** — real-time ingestion with Event Hubs and Stream Analytics
-- **[Azure E-Commerce Dimensional Warehouse](../azure-ecommerce-dimensional-warehouse)** — star schema data modeling on Azure SQL Database
+- **[Azure E-Commerce Analytics Pipeline](https://github.com/shijithpulikkal/azure-ecommerce-analytics-pipeline)** — batch ETL with ADF and Synapse serverless SQL
+- **[Azure E-Commerce Streaming Pipeline](https://github.com/shijithpulikkal/azure-ecommerce-streaming-pipeline)** — real-time ingestion with Event Hubs and Stream Analytics
+- **[Azure E-Commerce Dimensional Warehouse](https://github.com/shijithpulikkal/azure-ecommerce-dimensional-warehouse)** — star schema data modeling on Azure SQL Database
 
 ---
 
-## 🧾 License
+
 
 <!-- Add if relevant -->
